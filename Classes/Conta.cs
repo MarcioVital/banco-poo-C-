@@ -19,6 +19,38 @@ namespace banco_poo
             this.credito = credito;
         }
 
+        public override string ToString()
+        {
+            string retorno = "";
+            retorno += this.TipoConta  + "  |  ";
+            retorno += this.nome + "  |  ";
+            retorno += this.saldo + "  |  ";
+            retorno += this.credito + "  |  ";
+
+            return retorno;
+        }
+
+        public bool sacar (double valorSaque)
+        {
+            if (this.saldo - valorSaque < (this.credito * -1))
+            {
+                Console.WriteLine("Saldo Insuficiente!");
+                return false;
+            }
+            this.saldo -= valorSaque;
+            Console.WriteLine("{0}, seu Saldo agora é {1}", this.nome, this.saldo);
+            return true;
+           
+        }
+
+        public void Depositar(double valorDeposito)
+        {
+            this.saldo += valorDeposito;
+            Console.WriteLine("{0}, agora seu saldo ficou de R$ {1}", this.nome, this.saldo);
+
+        }
+
+        
         
     }
 }

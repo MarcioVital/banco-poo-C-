@@ -6,9 +6,10 @@ namespace banco_poo
     {
         static void Main(string[] args)
         {
+            Conta n1 = new Conta(TipoConta.PessoaFisica, "Marcio", 0, 0);
+           
 
-            Conta conta1 = new Conta();
-            Console.WriteLine();
+            Console.WriteLine(n1);
         }
     }
 }

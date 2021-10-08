@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace banco_poo.enum
+namespace banco_poo
 {
-    class Class1
+    public enum TipoConta
 {
+        PessoaFisica = 1,
+        PessoaJuridica = 2
 }
 }
