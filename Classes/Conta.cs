@@ -13,7 +13,7 @@ namespace banco_poo
 
        public Conta (TipoConta tipoConta, string nome, double saldo, double credito)
         {
-            this.TipoConta = TipoConta;
+            this.TipoConta = tipoConta;
             this.nome = nome;
             this.saldo = saldo;
             this.credito = credito;
@@ -22,10 +22,10 @@ namespace banco_poo
         public override string ToString()
         {
             string retorno = "";
-            retorno += this.TipoConta  + "  |  ";
-            retorno += this.nome + "  |  ";
-            retorno += this.saldo + "  |  ";
-            retorno += this.credito + "  |  ";
+            retorno +=  this.TipoConta  + "  |  ";
+            retorno +=  this.nome + "  |  ";
+            retorno +=  this.saldo + "  |  ";
+            retorno +=  this.credito;
 
             return retorno;
         }
