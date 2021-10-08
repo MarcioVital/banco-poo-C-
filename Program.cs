@@ -6,7 +6,9 @@ namespace banco_poo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            Conta conta1 = new Conta();
+            Console.WriteLine();
         }
     }
 }
